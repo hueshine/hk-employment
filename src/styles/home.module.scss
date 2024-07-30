@@ -1,0 +1,132 @@
+.hero_flex {
+  margin-top: 100px;
+
+  position: relative;
+  .animated_line {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
+}
+
+.hero {
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    background: #e2f1ea;
+    border-radius: 50%;
+    transform: translateX(55%);
+    z-index: -1;
+  }
+
+  &_content {
+    h1 {
+      span {
+        position: relative;
+        display: inline-block;
+
+        &::after {
+          position: absolute;
+          bottom: -10px;
+          left: 0;
+          content: "";
+          width: 100%;
+          height: 10px;
+          background: #17479d;
+        }
+      }
+    }
+
+    p {
+      margin-top: 40px;
+      width: 480px;
+      max-width: 100%;
+      font-size: 1.5rem;
+      line-height: 2.625rem;
+      font-weight: 300;
+    }
+  }
+
+  &_image {
+    position: relative;
+    height: 90vh;
+    margin-top: 80px;
+
+    .spotlight {
+      position: absolute;
+      z-index: 3;
+
+      img {
+        max-width: max-content;
+        width: 580px;
+        height: 580px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+
+    .spotlight_stroke_wrapper {
+      position: absolute;
+      top: -80px;
+      width: 100%;
+      left: 70px;
+
+      .spotlight_stroke {
+        border: 40px solid #f5c015;
+        border-radius: 50%;
+        height: 285px;
+        width: 285px;
+      }
+    }
+
+    .spotlight_ripple_wrapper {
+      position: absolute;
+      bottom: 30px;
+      left: -30px;
+    }
+  }
+}
+
+.hero_intro {
+  padding: 50px 0 100px 0;
+  position: relative;
+
+  img {
+    position: absolute;
+    width: 50%;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+  }
+
+  &_circle {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background: #18235a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      color: #fff;
+    }
+  }
+
+  &_text {
+    padding-top: 100px;
+
+    p {
+      margin-bottom: 50px;
+    }
+  }
+}

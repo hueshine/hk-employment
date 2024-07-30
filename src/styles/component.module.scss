@@ -1,0 +1,54 @@
+.btn {
+  background: #c93c27;
+  padding: 11px 30px;
+  border: none;
+  line-height: 2;
+  text-transform: uppercase;
+  background: #ef5033;
+  border-radius: 30px;
+  color: #fff;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-weight: 700;
+
+  &:hover {
+    background: #ec1c24;
+  }
+}
+
+.commitment {
+  padding: 100px 0 10px;
+  background: #fcfcfc;
+  position: relative;
+
+  .animated_line {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    top: -80px;
+    width: 200px;
+
+    svg {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .commitment_flex {
+    display: flex;
+    padding-bottom: 43px;
+    position: relative;
+    height: 100%;
+    flex-wrap: unset;
+    margin-bottom: 70px;
+
+    &_icon {
+      min-width: 67px;
+      margin-bottom: 20px;
+      margin-right: 26px;
+    }
+  }
+}
